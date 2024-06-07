@@ -17,7 +17,7 @@ $loginURL = $gClient->createAuthUrl();
     } else //jika captcha terisi
     {
       $recaptcha = $_POST['g-recaptcha-response'];
-      $secret_key = '6LcEeBkpAAAAAJo_IRm6hOxd-3hoXvmHjipyxTK8';
+      $secret_key = 'Change_To_Secret_Key';
       $url = 'https://www.google.com/recaptcha/api/siteverify?secret='
         . $secret_key . '&response=' . $recaptcha;
       $response = file_get_contents($url);
